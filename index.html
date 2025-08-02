@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+</head>
+<body style="background-color: bisque; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+
+  <h1 style="text-align: center;">Survey Form</h1>
+
+  <div style="background-color: #fff; padding: 20px 70px; margin: 0 50px; display: flex; flex-direction: column; gap: 20px;">
+
+    <p style="font-size: 17px; text-align: center;">
+      Let us know how we can improve <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+    </p>
+
+    <!-- Name, Email, Age -->
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" />
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" />
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <label>Age:</label>
+        <input type="number" placeholder="Age" />
+      </div>
+    </div>
+
+    <!-- Current role -->
+    <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+      <label>Which option best describes your current role?</label>
+      <select>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+    </div>
+
+    <!-- Recommend FCC -->
+    <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+      <p>* How likely is it that you would recommend <br /> freeCodeCamp to a friend?</p>
+      <form style="display: flex; flex-direction: column; gap: 5px;">
+        <label><input type="radio" name="recommend" /> Definitely</label>
+        <label><input type="radio" name="recommend" /> Maybe</label>
+        <label><input type="radio" name="recommend" /> Not sure</label>
+      </form>
+    </div>
+
+    <!-- Like most -->
+    <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+      <label>What do you like most in FCC:</label>
+      <select>
+        <option value="" disabled selected>Select</option>
+        <option value="java">Java</option>
+        <option value="react">React</option>
+      </select>
+    </div>
+
+    <!-- Things to improve -->
+    <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+      <p>* Things that should be improved in the future:</p>
+      <form style="display: flex; flex-direction: column; gap: 5px;">
+        <label><input type="checkbox" name="improve" value="frontend" /> Front-end</label>
+        <label><input type="checkbox" name="improve" value="backend" /> Back-end</label>
+        <label><input type="checkbox" name="improve" value="data" /> Data</label>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
